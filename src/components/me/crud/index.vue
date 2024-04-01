@@ -5,13 +5,13 @@
         <slot />
       </n-space>
       <div class="flex-shrink-0">
-        <n-button ghost type="primary" @click="handleReset">
-          <i class="i-fe:rotate-ccw mr-4" />
-          重置
-        </n-button>
-        <n-button attr-type="submit" class="ml-20" type="primary">
+        <n-button attr-type="submit" type="primary">
           <i class="i-fe:search mr-4" />
           搜索
+        </n-button>
+        <n-button ghost type="primary" class="ml-20" @click="handleReset">
+          <i class="i-fe:rotate-ccw mr-4" />
+          重置
         </n-button>
       </div>
     </form>
