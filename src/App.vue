@@ -13,7 +13,7 @@
         </KeepAlive>
       </component>
 
-      <LayoutSetting class="fixed right-18 bottom-13 z-999" />
+      <LayoutSetting class="fixed bottom-13 right-18 z-999" />
     </router-view>
   </n-config-provider>
 </template>
