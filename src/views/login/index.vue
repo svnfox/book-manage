@@ -3,15 +3,8 @@
     <div
       class="m-auto max-w-720 min-w-345 f-c-c rounded-8 bg-opacity-20 bg-cover p-12 card-shadow auto-bg"
     >
-      <!-- <div class="hidden w-380 px-20 py-35 md:block">
-        <img src="@/assets/images/login_banner.webp" class="w-full" alt="login_banner" />
-      </div> -->
-
       <div class="w-380 flex-col px-20 py-32">
         <h2 class="text-center text-24 text-#6a6a6a font-normal">
-          <div>
-            <img src="@/assets/images/logo.png" class="mr-12 h-50" />
-          </div>
           <div>{{ title }}</div>
         </h2>
         <n-input
@@ -151,9 +144,10 @@ async function onLoginSuccess(data = {}) {
     if (route.query.redirect) {
       const path = route.query.redirect
       delete route.query.redirect
-      router.push({ path, query: route.query })
+      router.push('/business/book-manage')
+      // router.push({ path, query: route.query })
     } else {
-      router.push('/')
+      router.push('/business/book-manage')
     }
   } catch (error) {
     console.error(error)

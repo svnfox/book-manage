@@ -1,10 +1,10 @@
-# twth-website-admin
+# book-manage
 
-拓威天海官网后台
+图书管理后台
 
 ## 技术架构
 
-Vue3 + Pinia + Vite + NaiveUI + UnoCSS + PNPM
+Vue3 + Pinia + Vite + NaiveUI + PNPM + UnoCSS + SASS + Docker
 
 ## Recommended IDE Setup
 

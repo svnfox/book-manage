@@ -12,6 +12,7 @@ export const basicRoutes = [
   {
     name: 'Home',
     path: '/',
+    redirect: '/business/book-manage',
     component: () => import('@/views/home/index.vue'),
     meta: {
       title: '首页',

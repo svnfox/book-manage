@@ -35,7 +35,7 @@ export const useCrud = ({ name, initForm = {}, doCreate, doDelete, doUpdate, ref
       ...options,
       async onOk() {
         if (typeof onOk === 'function') {
-          return await onOk()
+          return await onOk(row)
         } else {
           return await handleSave()
         }
